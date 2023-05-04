@@ -21,7 +21,7 @@ public class SchoolStudentDAO
 	private static final String dbDriver = "com.mysql.cj.jdbc.Driver";
 	private static final String dbUrl = "jdbc:mysql://localhost:3306/jdbcproject";
 	private static final String dbUsername = "root";
-	private static final String dbPassword = "Ashis_admin$5";
+	private static final String dbPassword = "admin";
 	private static final String createTable = "CREATE TABLE student(student_id INT PRIMARY KEY AUTO_INCREMENT, student_name VARCHAR(100) NOT NULL, email VARCHAR(100) UNIQUE NOT NULL, subject VARCHAR(100) NOT NULL, age INT)";
 	private static final String insertStudent = "INSERT INTO student(student_name, email, subject, age) VALUES (?, ?, ?, ?)";
 	private static final String updateStudent = "UPDATE student SET student_name = ?, email = ?, subject = ?, age = ? WHERE student_id = ?";
